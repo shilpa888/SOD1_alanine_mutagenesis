@@ -1,0 +1,10 @@
+#calculate the rmsd and histogram the data
+trajin complex_md_all_nowat_noions.nc
+reference dimer_solv_ref.pdb
+nativecontacts name BA :49-82 :121-142 byresidue out native_wt_dimer_holo_inerface_contacts_Calpha.dat mindist maxdist reference 
+#nativecontacts name BC :12-22&@CA :23-33&@CA byresidue out BC_native.dat mindist maxdist reference series seriesout native_BC_again.dat
+#nativecontacts name CD :23-33&@CA :34-44&@CA byresidue out CD_native.dat mindist maxdist reference series seriesout native_CD_again.dat
+#nativecontacts name DE :34-44&@CA :45-55&@CA byresidue out DE_native.dat mindist maxdist reference series seriesout native_DE_again.dat
+#nativecontacts name EF :45-55&@CA :56-66&@CA byresidue out EF_native.dat mindist maxdist reference   series seriesout native_EF_again.dat
+#nativecontacts name FG :56-66&@CA :67-77&@CA byresidue out FG_native.dat mindist maxdist reference  series seriesout native_FG_again.dat
+#nativecontacts name GH :67-77&@CA :78-88&@CA byresidue out GH_native.dat mindist maxdist reference   series seriesout native_Gh_again.dat
