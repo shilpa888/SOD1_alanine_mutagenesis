@@ -1,0 +1,8 @@
+Initial minimization of protein
+ &cntrl
+ imin=1,
+ maxcyc=1000,
+ ncyc=250,
+ cut=12
+/
+
