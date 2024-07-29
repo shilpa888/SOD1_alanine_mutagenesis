@@ -1,0 +1,82 @@
+source oldff/leaprc.ff14SB
+source leaprc.gaff
+addAtomTypes {
+        { "M1"  "Cu" "sp3" }
+        { "M2"  "Zn" "sp3" }
+        { "Y1"  "N" "sp3" }
+        { "Y2"  "N" "sp3" }
+        { "Y3"  "N" "sp3" }
+        { "Y4"  "N" "sp3" }
+        { "Y5"  "N" "sp3" }
+        { "Y6"  "N" "sp3" }
+        { "Y7"  "N" "sp3" }
+        { "Y8"  "O" "sp3" }
+}
+HE1 = loadmol2 HE1.mol2
+HD1 = loadmol2 HD1.mol2
+HA1 = loadmol2 HA1.mol2
+HE2 = loadmol2 HE2.mol2
+HE3 = loadmol2 HE3.mol2
+AP1 = loadmol2 AP1.mol2
+HD2 = loadmol2 HD2.mol2
+CU1 = loadmol2 CU1.mol2
+ZN1 = loadmol2 ZN1.mol2
+loadamberparams frcmod1.HIA
+loadamberparams frcmod.ions1lm_126_tip3p
+loadamberparams 1SOD_mcpbpy.frcmod
+mol = loadpdb dimer_use2_s134a.pdb
+bond mol.57.SG mol.146.SG
+bond mol.46.ND1 mol.154.CU
+bond mol.48.NE2 mol.154.CU
+bond mol.63.NE2 mol.154.CU
+bond mol.63.ND1 mol.155.ZN
+bond mol.71.ND1 mol.155.ZN
+bond mol.80.ND1 mol.155.ZN
+bond mol.83.OD2 mol.155.ZN
+bond mol.120.NE2 mol.154.CU
+bond mol.45.C mol.46.N
+bond mol.46.C mol.47.N
+bond mol.47.C mol.48.N
+bond mol.48.C mol.49.N
+bond mol.62.C mol.63.N
+bond mol.63.C mol.64.N
+bond mol.70.C mol.71.N
+bond mol.71.C mol.72.N
+bond mol.79.C mol.80.N
+bond mol.80.C mol.81.N
+bond mol.82.C mol.83.N
+bond mol.83.C mol.84.N
+bond mol.119.C mol.120.N
+bond mol.120.C mol.121.N
+bond mol.212.SG mol.301.SG
+bond mol.201.ND1 mol.309.CU
+bond mol.203.NE2 mol.309.CU
+bond mol.218.NE2 mol.309.CU
+bond mol.218.ND1 mol.310.ZN
+bond mol.226.ND1 mol.310.ZN
+bond mol.235.ND1 mol.310.ZN
+bond mol.238.OD2 mol.310.ZN
+bond mol.275.NE2 mol.309.CU
+bond mol.200.C mol.201.N
+bond mol.201.C mol.202.N
+bond mol.202.C mol.203.N
+bond mol.203.C mol.204.N
+bond mol.217.C mol.218.N
+bond mol.218.C mol.219.N
+bond mol.225.C mol.226.N
+bond mol.226.C mol.227.N
+bond mol.234.C mol.235.N
+bond mol.235.C mol.236.N
+bond mol.237.C mol.238.N
+bond mol.238.C mol.239.N
+bond mol.274.C mol.275.N
+bond mol.275.C mol.276.N
+savepdb mol 1SOD_ddry.pdb
+saveamberparm mol 1SOD_dry.prmtop 1SOD_dry.inpcrd
+solvatebox mol TIP3PBOX 10.0
+addions mol Na+ 0
+addions mol Cl- 0
+savepdb mol complex_wat.pdb
+saveamberparm mol complex_wat.prmtop complex_wat.inpcrd
+quit
+ 

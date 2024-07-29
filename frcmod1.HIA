@@ -1,0 +1,110 @@
+Remark line goes here
+MASS
+N  14.010        0.530
+H  1.008         0.161
+CT 12.010        0.878
+H1 1.008         0.135
+HC 1.008         0.135
+CC 12.010        0.360
+CV 12.010        0.360
+H4 1.008         0.167
+NB 14.010        0.530
+CA 12.010        0.360
+H5 1.008         0.167
+C  12.010        0.616
+O  16.000        0.434
+
+BOND
+H -N   434.00   1.010
+CT-N   337.00   1.449
+CT-H1  340.00   1.090
+CT-CT  310.00   1.526
+C -CT  317.00   1.522
+CT-HC  340.00   1.090
+CC-CT  317.00   1.504
+CC-CV  512.00   1.375
+CC-NB  410.00   1.394
+CV-H4  367.00   1.080
+CV-NB  410.00   1.394
+CA-NB  410.00   1.394       same as CC-NB, penalty score=  0.4
+CA-H5  367.00   1.080       same as CA-HA, penalty score=  0.1
+C -O   570.00   1.229
+
+ANGLE
+H1-CT-N    50.000     109.500
+CT-CT-N    80.000     109.700
+C -CT-N    63.000     110.100
+CT-N -H    50.000     118.040
+CT-CT-HC   50.000     109.500
+CC-CT-CT   63.000     113.100
+CT-C -O    80.000     120.400
+CT-CT-H1   50.000     109.500
+C -CT-H1   50.000     109.500
+C -CT-CT   63.000     111.100
+CT-CC-CV   70.000     120.000
+CT-CC-NB   70.000     120.000
+CC-CT-HC   50.000     109.500
+HC-CT-HC   35.000     109.500
+CC-CV-H4   50.000     120.000
+CC-CV-NB   70.000     120.000
+CA-NB-CC   70.000     117.000   same as CC-NB-CR, penalty score=  0.5
+CV-CC-NB   70.000     120.000   same as CW-CC-NB, penalty score=  0.1
+CA-NB-CV   70.000     117.000   same as CC-NB-CR, penalty score=  0.5
+H4-CV-NB   50.000     120.000
+NB-CA-NB   71.208     129.100   Calculated using NC-CQ-NC, penalty score=164.6
+H5-CA-NB   50.200     122.110   same as h5-ca-nc, penalty score=  0.0
+
+DIHE
+HC-CT-CT-N    9    1.400         0.000           3.000
+CC-CT-CT-N    9    1.400         0.000           3.000
+O -C -CT-N    6    0.000         0.000           2.000
+H1-CT-N -H    6    0.000         0.000           2.000
+CT-CT-N -H    6    0.000         0.000           2.000
+C -CT-N -H    6    0.000         0.000           2.000
+CV-CC-CT-CT   6    0.000         0.000           2.000
+NB-CC-CT-CT   6    0.000         0.000           2.000
+H1-CT-CT-HC   9    1.400         0.000           3.000
+CC-CT-CT-H1   9    1.400         0.000           3.000
+O -C -CT-H1   1    0.800         0.000          -1.000
+O -C -CT-H1   1    0.000         0.000          -2.000
+O -C -CT-H1   1    0.080       180.000           3.000
+O -C -CT-CT   6    0.000         0.000           2.000
+CT-CC-CV-H4   4   20.600       180.000           2.000
+CT-CC-CV-NB   4   20.600       180.000           2.000
+CT-CC-NB-CA   2    4.800       180.000           2.000
+C -CT-CT-HC   9    1.400         0.000           3.000
+CV-CC-CT-HC   6    0.000         0.000           2.000
+NB-CC-CT-HC   6    0.000         0.000           2.000
+C -CT-CT-CC   9    1.400         0.000           3.000
+CC-CV-NB-CA   2    4.800       180.000           2.000
+NB-CA-NB-CC   2    4.800       180.000           2.000      same as X -CC-NB-X , penalty score=106.0
+H5-CA-NB-CC   2    4.800       180.000           2.000      same as X -CC-NB-X , penalty score=106.0
+CV-CC-NB-CA   2    4.800       180.000           2.000
+NB-CA-NB-CV   2    4.800       180.000           2.000      same as X -CC-NB-X , penalty score=106.0
+H5-CA-NB-CV   2    4.800       180.000           2.000      same as X -CC-NB-X , penalty score=106.0
+NB-CC-CV-H4   4   20.600       180.000           2.000
+H4-CV-NB-CA   2    4.800       180.000           2.000
+NB-CC-CV-NB   4   20.600       180.000           2.000
+
+IMPROPER
+CT-CV-CC-NB         1.1          180.0         2.0          Using the default value
+CC-H4-CV-NB         1.1          180.0         2.0          Using the default value
+H5-NB-CA-NB         1.1          180.0         2.0          Using the default value
+
+NONBON
+  N           1.8240  0.1700
+  H           0.6000  0.0157
+  CT          1.9080  0.1094
+  H1          1.3870  0.0157
+  HC          1.4870  0.0157
+  CC          1.9080  0.0860
+  CV          1.9080  0.0860
+  H4          1.4090  0.0150
+  NB          1.8240  0.1700
+  CA          1.9080  0.0860
+  H5          1.3590  0.0150
+  C           1.9080  0.0860
+  O           1.6612  0.2100
+
+
+
